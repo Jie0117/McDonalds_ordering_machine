@@ -1,4 +1,4 @@
-##麥當勞自助點餐系統操作手冊
+## 麥當勞自助點餐系統操作手冊
 
 
 ![](https://github.com/Jie0117/McDonalds_ordering_machine/blob/main/img/Aspose.Words.14d6134f-6aab-48ea-9d5e-ccd23d7bf038.001.png)
