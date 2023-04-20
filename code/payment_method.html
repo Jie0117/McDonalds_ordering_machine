@@ -1,0 +1,46 @@
+<head>
+    <title>payment_method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        .text_size{
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            font-size: 40;
+        }
+       
+        .box_size{
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        max-width: 100%;
+        margin-left:20px;
+        background-image: /Users/linkred/Desktop/mcdonalds.png;
+        border:10px white solid;
+        background-color: #005d22;
+        }
+    </style>
+</head>
+<body style ="background-color: #005d22">
+
+    <div class = "text_size">
+        選擇付款方式
+    </div>
+    <div style="text-align:center" >
+        <input class = "box_size" type="button"  onclick="counter()" style="background-image: url(至櫃檯結帳.png);width:150px;height:150px;">
+        <input class = "box_size" type="button" onclick="quickly_pay()" style="background-image: url(快速結帳.png);width:150px;height:150px;">
+    </div>
+    <script>
+        function counter(){
+            location.href='last.html ';
+            alert("至櫃檯結帳")
+        }
+        function quickly_pay(){
+            location.href='quick_payment.html ';
+            alert("這是快速結帳")
+        }
+
+    </script>
+
+</body>
+

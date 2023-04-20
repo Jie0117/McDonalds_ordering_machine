@@ -1,0 +1,45 @@
+<head>
+    <title>cread_card_input</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+
+        .mid_size{
+            text-align: center;
+        }
+        .mid_text{
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            font-size: 50;
+        }
+        .input_size{
+            text-align: center;
+            font-size:52px;
+        }
+
+        
+    </style>
+</head>
+<body style ="background-color: #005d22">
+    <div class = "mid_size">
+        <img src="mcdonalds.png ", width ="500" ,heigth = "500"/>
+    </div>
+    <div class="mid_text">
+        請輸入卡號或感應下方刷卡機
+    </div>
+    <div class = "mid_size">
+        <input value=""  type="text" style="font-size:52px">
+    </div>
+    <div class = "input_size">
+        <input value="送出" type="button" style ="background-color: yellow;width:150px;height:100px;"
+         onclick="send()">
+    </div>
+
+    <script>
+        function send(){
+            location.href='choose_bill.html ';
+        }
+    </script>
+
+   
+</body>

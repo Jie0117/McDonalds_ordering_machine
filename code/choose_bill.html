@@ -1,0 +1,74 @@
+<head>
+    <title>choose_bill</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        .mid_size{
+            text-align: center;
+        }
+        .mid1_size{
+            margin:0 auto;
+        }
+
+        .text_size{
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            font-size: 40;
+        }
+
+        .text_size1{
+            text-align: center;
+            color: white;
+            font-size: 20;
+        }
+        .box_size{
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        max-width: 100%;
+        margin-left:20px;
+        border:10px white solid;
+        background-color: #005d22;
+        }
+       
+        .pic_size{
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body style ="background-color: #005d22">
+    <div class = "mid1_size">
+    <div class = "mid_size">
+        <img src="mcdonalds.png ", width ="500" ,heigth = "500"/>
+    </div>
+    <div class = "text_size">
+            請選擇發票類型
+    </div>
+    <div style="text-align:center">
+        <input class = "box_size" type="button" onclick="personal_bill()" style="background-image: url(個人發票.png);width:150px;height:150px;">
+        <input class = "box_size" type="button" onclick="compant_bill()" style="background-image: url(公司發票.png);width:150px;height:150px;">
+        <input class = "box_size" type="button" onclick="donate()" style="background-image: url(愛心捐賑.png);width:150px;height:150px;">
+        <input class = "box_size" type="button" onclick="go_back()" style="background-image: url(返回付款方式.png);width:150px;height:150px;">
+    </div> 
+    <script>
+        function personal_bill(){
+            location.href='photoprinting.html ';
+            alert("這是個人發票")
+        }
+        function compant_bill(){
+            location.href='photoprinting.html ';
+            alert("這是公司發票")
+        }
+        function donate(){
+            location.href='photoprinting.html ';
+            alert("這是愛心捐賑")
+        }
+        function go_back(){
+            location.href='payment_method.html ';
+            alert("這是返回付款方式")
+        }
+    </script>
+</body>
+

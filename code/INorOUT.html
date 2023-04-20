@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <style  type="text/css" media="all">
+        .eatIn{
+            width:182px;
+            height:126px;
+            font-size:20px;
+            background-image:url("eatIn.jpg");
+            margin-right:20px;
+        }
+        .takeOut{
+            width:182px;
+            height:126px;
+            font-size:20px;
+            background-image:url("takeOut.jpg");
+            margin-left:20px;
+        }
+        .chinese{
+            width:180px;
+            height:90px;
+            font-size:20px;
+            background-color:white;
+            margin-rigth:20px;
+        }
+        .english{
+            width:180px;
+            height:90px;
+            font-size:20px;
+            background-color:white;
+            margin-left:20px;
+        }
+        
+        
+    </style>
+  <head>
+    <meta charset="utf-8">
+    <title>language_and_here_or_toGo</title>
+  </head>
+  <body bgcolor="green">
+        <div class = "language" align = center>
+            <h1 style="color:white;">選擇內用外帶</h1>
+            <input class=eatIn type="button" onclick="chooseIn()"  >
+            <input class=takeOut type="button" onclick="chooseOut()"  >
+        </div>
+        <div align = center>
+            <h1 style="color:white;">選擇語言</h1>
+            <input class=chinese type="button" onclick="chooseChinese()" value="中文" >
+            <input class=english type="button" onclick="chooseEnglish()" value="English" >
+        </div>
+  </body>
+</html>
+<script language="javascript">
+    
+    var lan = 0;
+    var lct = 0; 
+    function chooseIn() {
+        alert("您選擇內用(Eat in)");
+        lct = 1;
+        if(lct == 1 && lan == 1){
+            window.location.href="meal.php";
+        }
+    }
+    function chooseOut() {
+        alert("您選擇外帶(Take out)");
+        lct = 1;
+        if(lct == 1 && lan == 1){
+            window.location.href="meal.php";
+        }
+    }
+    function chooseChinese() {
+        alert("您選擇中文");
+        lan = 1;
+        if(lct == 1 && lan == 1){
+            window.location.href="meal.php";
+        }
+    }
+    function chooseEnglish() {
+        alert("You choose english");
+        lan = 1;
+        if(lct == 1 && lan == 1){
+            window.location.href="meal.php";
+        }
+    }
+
+    </script>
